@@ -11,8 +11,11 @@ edge_list = [(1, 2), (2, 3), (3, 4), (3, 5), (4, 6),
 G = nx.Graph()
 G.add_edges_from(edge_list)
 # G = nx.complete_graph(5)
-print(dict(G.degree)[5])
-print(nx.shortest_path(G, 2, 4))
+
+print(nx.degree_centrality(G))
+
+# print(dict(G.degree)[5])
+# print(nx.shortest_path(G, 2, 4))
 nx.draw_planar(G, with_labels=True)
 plt.show()
 
