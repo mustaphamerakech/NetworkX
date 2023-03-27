@@ -1,7 +1,8 @@
 
 from matplotlib import pyplot as plt
 
-plt.xkcd()
+# plt.xkcd()
+plt.style.use('fivethirtyeight')
 
 ages_x = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35,
           36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55]
@@ -25,7 +26,9 @@ plt.title('Median Salary (USD) by Age')
 plt.legend()
 
 plt.tight_layout()
-
+plt.grid(True)
 plt.savefig('plot.png')
 
 plt.show()
+
+# print(plt.style.available)
