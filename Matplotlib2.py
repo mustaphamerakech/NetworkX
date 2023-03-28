@@ -33,4 +33,5 @@ plt.xlabel("Number of People Who Use")
 
 plt.tight_layout()
 
+
 plt.show()
